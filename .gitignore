@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+# custom
+.idea
+node_modules
+
+
 # testing
 /coverage
 
