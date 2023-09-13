@@ -5,33 +5,35 @@
         <title>Edit Assignments</title>
     </head>
     <body>
-        <table cellspacing="30">
+        <table width = "100%">
             <tr>
-                 <!-- Main Navigator Column !-->
+                 
                  <td valign="top">
+                    <!-- Main Navigator Column !-->
                     <ul>
-                        <li><a href="../profile/index.html">Account</a></li>
+                        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
                         <li><a href="#">Dashboard</a></li>
-                        <li><a href="../home.html">Course</a></li>
-                        <li><a href="#">Group</a></li>
-                        <li><a href="#">Calendar</a></li>
+                        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+                        <li><a href="#">Groups</a></li>
                         <li><a href="#">Inbox</a></li>
                         <li><a href="#">History</a></li>
                         <li><a href="#">Studio</a></li>
+                        <li><a href="#">Commons</a></li>
                         <li><a href="#">Help</a></li>
                     </ul>
                 </td>
 
                 <!-- Sub Navigator Column !-->
                 <td valign="top">
+                    <!-- Sub Navigator Column !-->
                     <ul>
-                        <li><a href="../home.html">Home</a></li>
-                        <li><a href="#">Module</a></li>
+                        <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                        <li><a href="/Kanbas/Courses/Modules/screen.html">Module</a></li>
                         <li><a href="#">Piazza</a></li>
                         <li><a href="#">Zoom Meeting</a></li>
-                        <li><a href="index.html">Assignments</a></li>
+                        <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
                         <li><a href="#">Quizzes</a></li>
-                        <li><a href="../grades.html">Grade</a></li>
+                        <li><a href="/Kanbas/Courses/Grades/screen.html">Grade</a></li>
                         <li><a href="#">People</a></li>
                         <li><a href="#">Panopto Video</a></li>
                         <li><a href="#">Discussions</a></li>
@@ -42,86 +44,77 @@
                         <li><a href="#">Outcomes</a></li>
                         <li><a href="#">Collaborations</a></li>
                         <li><a href="#">Syllabus</a></li>
-                        <li><a href="../seetings/index.html">Settings</a></li>
+                        <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
                     </ul>
                 </td>
                 <td valign = "top">
+                    <!--Import From Index-->
                     <select id = "moreOption">
                         <option value = "speedGrad" selected>SpeedGrader</option>
                         <option value = "delete" >Delete</option>
                     </select>
-
+                    
                     <label for="assignName" ><h2>Assignment Name</h2></label>
                     <input id = "assignName" type="text" placeholder="A1-ENV + HTML"><br><br>
                     <textarea cols="30" rows="3">Assignment Description</textarea><br><br>
-
+                    
                     <label for="pts">Points</label>
-                    <input id = "pts" type = "number" placeholder="100"><br><br>
-
+                    <input id = "pts" type = "number" placeholder="100" max="100" min="0"><br><br>
+                    
                     <label for="assignmentGrp">Assignment Group</label>
                     <select id = "assignmentGrp">
                         <option value = "ASSIGNMENTS" selected>ASSIGNMENTS</option>
                     </select><br><br>
-
+                    
                     <label for="displayOpt">Display Grade as</label>
                     <select id = "displayOpt">
                         <option value = "percent" selected>Percentage</option>
                     </select><br /><br />
-
+                    
                     <label for="submitType">Submission Type</label>
                     <select id = "submitType">
                         <option value = "online" selected>Online</option>
                     </select><br /><br />
-
+                    
                     <label>Online Entry Options</label><br>
-                    <input type = "checkbox" value="textEty" name = "textEty">
-                    <label for="textEty">Text Entry</label><br />
-
-                    <input type = "checkbox" value="webURL" name = "webURL">
-                    <label for="webURL">Website URL</label><br />
-
-                    <input type = "checkbox" value="mediaRec" name = "mediaRec">
-                    <label for="mediaRec">Media Recorading</label><br />
-
-                    <input type = "checkbox" value="studentAnno" name = "studentAnno">
-                    <label for="studentAnno">Student Annotation</label><br />
-
-                    <input type = "checkbox" value="file" name = "file">
-                    <label for="file">File Upload</label><br /><br />
-
+                    <label><input type = "checkbox">Text Entry</label><br />
+                    <label><input type = "checkbox">Website URL</label><br />
+                    <label><input type = "checkbox">Media Recorading</label><br />
+                    <label><input type = "checkbox">Student Annotation</label><br />
+                    <label><input type = "checkbox">File Upload</label><br /><br />
+                    
+                    
                     <label for="submitAtt">Submission Attempts</label>
                     <select id = "submitAtt">
                         <option value = "unli" selected>Unlimited</option>
                     </select><br /><br />
-
+                    
                     <label for="plagRev">Plagiarism Review</label>
                     <select id = "plagRev">
                         <option value = "none" selected>None</option>
                     </select><br /><br />
                     
-                    <label>Group Assignment</label><br>
-                    <input type = "checkbox" value="grpAssign" name = "grpAssign">
-                    <label for="grpAssign">This is a group assignment</label><br /><br />
-
+                    Group Assignment<br>
+                    <label><input type = "checkbox">This is a group assignment</label><br /><br />
+                    
                     <label>Peer Review</label><br>
-                    <input type = "checkbox" value="peerRev" name = "peerRev">
-                    <label for="peerRev">Require Peer Review</label><br /><br />
+                    <label><input type = "checkbox">Require Peer Review</label><br /><br />
                     
                     <p>Assign</p>
-                    <label for="asignTo">Assign To</label><br>
-                    <input type="text" id = "asignTo" placeholder="Everyone"><br /><br />
-
-                    <label for="due">Due</label>
-                    <input type="date" id = "due"><br /><br />
-
-                    <label for="from">Available From</label>
-                    <input type="date" id = "from"><br /><br />
-
-                    <label for="to">Until</label>
-                    <input type="date" id = "to"><br /><br />
-
-                    <button type="button"><a href="index.html">Save</a></button>
-                    <button type="button"><a href="index.html">Cancel</a></button>
+                    <label >Assign To <br /><input type="text" id = "asignTo" placeholder="Everyone"></label><br><br />
+                    
+                    
+                    <label>Due <input type="date" id = "due"></label><br /><br />
+                    
+                    
+                    <label>Available From <input type="date" id = "from"><br /><br /></label>
+                    
+                    
+                    <label>Until <input type="date" id = "to"><br /><br /></label>
+                    
+                    
+                    <button type="button"><a href="/Kanbas/Courses/Assignments/screen.html">Save</a></button>
+                    <button type="button"><a href="/Kanbas/Courses/Assignments/screen.html">Cancel</a></button>
                 </td>
             </tr>
         </table>

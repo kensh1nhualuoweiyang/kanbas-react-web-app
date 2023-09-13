@@ -1,0 +1,66 @@
+<select id = "moreOption">
+    <option value = "speedGrad" selected>SpeedGrader</option>
+    <option value = "delete" >Delete</option>
+</select>
+
+<label for="assignName" ><h2>Assignment Name</h2></label>
+<input id = "assignName" type="text" placeholder="A1-ENV + HTML"><br><br>
+<textarea cols="30" rows="3">Assignment Description</textarea><br><br>
+
+<label for="pts">Points</label>
+<input id = "pts" type = "number" placeholder="100" max="100" min="0"><br><br>
+
+<label for="assignmentGrp">Assignment Group</label>
+<select id = "assignmentGrp">
+    <option value = "ASSIGNMENTS" selected>ASSIGNMENTS</option>
+</select><br><br>
+
+<label for="displayOpt">Display Grade as</label>
+<select id = "displayOpt">
+    <option value = "percent" selected>Percentage</option>
+</select><br /><br />
+
+<label for="submitType">Submission Type</label>
+<select id = "submitType">
+    <option value = "online" selected>Online</option>
+</select><br /><br />
+
+<label>Online Entry Options</label><br>
+<label><input type = "checkbox">Text Entry</label><br />
+<label><input type = "checkbox">Website URL</label><br />
+<label><input type = "checkbox">Media Recorading</label><br />
+<label><input type = "checkbox">Student Annotation</label><br />
+<label><input type = "checkbox">File Upload</label><br /><br />
+
+
+<label for="submitAtt">Submission Attempts</label>
+<select id = "submitAtt">
+    <option value = "unli" selected>Unlimited</option>
+</select><br /><br />
+
+<label for="plagRev">Plagiarism Review</label>
+<select id = "plagRev">
+    <option value = "none" selected>None</option>
+</select><br /><br />
+
+Group Assignment<br>
+<label><input type = "checkbox">This is a group assignment</label><br /><br />
+
+<label>Peer Review</label><br>
+<label><input type = "checkbox">Require Peer Review</label><br /><br />
+
+<p>Assign</p>
+<label >Assign To <br /><input type="text" id = "asignTo" placeholder="Everyone"></label><br><br />
+
+
+<label>Due <input type="date" id = "due"></label><br /><br />
+
+
+<label>Available From <input type="date" id = "from"><br /><br /></label>
+
+
+<label>Until <input type="date" id = "to"><br /><br /></label>
+
+
+<button type="button"><a href="/Kanbas/Courses/Assignments/screen.html">Save</a></button>
+<button type="button"><a href="/Kanbas/Courses/Assignments/screen.html">Cancel</a></button>
