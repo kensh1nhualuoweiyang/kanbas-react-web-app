@@ -1,0 +1,13 @@
+.profile_header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    justify-content: center;
+}
+.profile_header i{
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.profile_header span{
+    font-size: larger;
+}

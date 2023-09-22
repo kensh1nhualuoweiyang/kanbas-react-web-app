@@ -5,41 +5,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
+    <link href="../AccountNavigator/index.css" rel="stylesheet" />
+    <link href="../../KanbasNavigator/index.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="../index.css" rel="stylesheet" />
+
 </head>
 
-<body>
-    <table width = "100%">
-        <tbody>
-            <tr>
-                <!-- Main Navigator Column !-->
-                <td valign="top">
-                    <ul>
-                        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                        <li><a href="#">Groups</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
+<body >
+    <div style="display: flex">
+        <ul class="wd-nav-sidebar">
+            <li><img src="../../../northeastern_logo.png"></li>
+            <li class="active">
+                <a href="/Kanbas/Account/Profile/screen.html">
+                    <i class="far fa-user fa-xl" style="color: #b7c1d1;"></i>
+                    <div>Account</div>
+                </a>
+            </li>
+            <li>
+                <a href="/Kanbas/Dashboard/screen.html">
+                    <i class="fa-solid fa-gauge-high fa-xl" style="color: #c11515;"></i>
+                    <div>Dashboard</div>
+                </a>
+            </li>
+            <li>
+                <a href="/Kanbas/Courses/Home/screen.html">
+                    <i class="fa-solid fa-book fa-xl" style="color: #c11515;"></i>
+                    <div>Courses</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="wd-nav-sidebar-row-element fa-regular fa-calendar-days fa-xl" style="color: #c11515;"></i>
+                    <div>Calendar</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="wd-nav-sidebar-row-element fa-solid fa-inbox fa-xl" style="color: #c11515;"></i>
+                    <div>Inbox</div>
+                </a>
+            </li>
+            <li>
+                <a href="#"> <i class="wd-nav-sidebar-row-element fa-regular fa-clock fa-xl"
+                        style="color: #c11515;"></i>
+                    <div>History</div>
+                </a>
+            </li>
+            <li><a href="#"><i class="wd-nav-sidebar-row-element fa-solid fa-network-wired fa-xl"
+                        style="color: #c11515;"></i>
+                    <div>Studio</div>
+                </a></li>
+            <li><a href="#"> <i class="wd-nav-sidebar-row-element fa-solid fa-arrow-right-from-bracket fa-xl"
+                        style="color: #c11515;"></i>
+                    <div>Commons</div>
+                </a></li>
+            <li><a href="#"> <i class="wd-nav-sidebar-row-element fa-regular fa-circle-question fa-2x"
+                        style="color: #c11515;"></i>
+                    <div>Help</div>
+                </a></li>
 
-                <!-- Sub Navigator Column !-->
-                <td valign="top">
-                    <ul>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">eProfolios</a></li>
-                        <li><a href="#">Shared Content</a></li>
-                        <li><a href="#">The Hub</a></li>
-                        <li><a href="#">Qwickly Course Tools</a></li>
-                        <li><a href="#">Global Anncouncements</a></li>
-                    </ul>
-                </td>
+        </ul>
+        <div class="account_main_content">
+            <div class="profile_header">
+                <i class="fa-solid fa-bars fa-xl" style="color: #c11515;"></i>
+                <span>Chenrong Su's Profile</span>
+                <hr>
+            </div>
+            <ul class="account-nav">
+                <li><a href="#">Notifications</a></li>
+                <li class="active"><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">eProfolios</a></li>
+                <li><a href="#">Shared Content</a></li>
+                <li><a href="#">The Hub</a></li>
+                <li><a href="#">Qwickly Course Tools</a></li>
+                <li><a href="#">Global Anncouncements</a></li>
+            </ul>
+        </div>
+        
+
+
+    </div>
+    <!-- <table width = "100%">
                 <td valign="top">
                     <p>Chenrong Su's Profile</p><br><br><br>
                     <h1>Chenrong Su <button type="button"><a href="/Kanbas/Account/Profile/EditProfile/screen.html">Edit
@@ -53,7 +105,7 @@
                 </td>
             </tr>
         </tbody>
-    </table>
+    </table> -->
 </body>
 
 </html>
