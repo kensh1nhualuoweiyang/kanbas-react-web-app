@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
-    <link href="../AccountNavigator/index.css" rel="stylesheet" />
-    <link href="../../KanbasNavigator/index.css" rel="stylesheet" />
-    <link href="index.css" rel="stylesheet" />
-    <link href="../index.css" rel="stylesheet" />
+    <link href="/Kanbas/css/general.css" rel="stylesheet" />
+    <link href="/Kanbas/css/subNav.css" rel="stylesheet" />
+    <link href="/Kanbas/css/kNav.css" rel="stylesheet" />
+    <link href="/Kanbas/css/profile.css" rel="stylesheet" />
 
 </head>
 
-<body >
-    <div style="display: flex">
+<body>
+    <div class="wd-flex">
         <ul class="wd-nav-sidebar">
-            <li><img src="../../../northeastern_logo.png"></li>
+            <li><img src="/northeastern_logo.png"></li>
             <li class="active">
                 <a href="/Kanbas/Account/Profile/screen.html">
                     <i class="far fa-user fa-xl" style="color: #b7c1d1;"></i>
@@ -69,43 +68,45 @@
                 </a></li>
 
         </ul>
-        <div class="account_main_content">
-            <div class="profile_header">
-                <i class="fa-solid fa-bars fa-xl" style="color: #c11515;"></i>
+        <div class="wd-general-content">
+            <div class="wd-general-header">
+                <i class="wd-general-icon fa-solid fa-bars fa-xl" style="color: #c11515;"></i>
                 <span>Chenrong Su's Profile</span>
                 <hr>
             </div>
-            <ul class="account-nav">
-                <li><a href="#">Notifications</a></li>
-                <li class="active"><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">eProfolios</a></li>
-                <li><a href="#">Shared Content</a></li>
-                <li><a href="#">The Hub</a></li>
-                <li><a href="#">Qwickly Course Tools</a></li>
-                <li><a href="#">Global Anncouncements</a></li>
-            </ul>
-        </div>
-        
-
-
-    </div>
-    <!-- <table width = "100%">
-                <td valign="top">
-                    <p>Chenrong Su's Profile</p><br><br><br>
-                    <h1>Chenrong Su <button type="button"><a href="/Kanbas/Account/Profile/EditProfile/screen.html">Edit
-                                Profile</a></button></h1>
+            <div class="wd-general-content-body">
+                <ul class="wd-sub-nav">
+                    <li><a href="#">Notifications</a></li>
+                    <li class="wd-tab-active"><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">eProfolios</a></li>
+                    <li><a href="#">Shared Content</a></li>
+                    <li><a href="#">The Hub</a></li>
+                    <li><a href="#">Qwickly Course Tools</a></li>
+                    <li><a href="#">Global Anncouncements</a></li>
+                </ul>
+                <div class="wd-profile-main-content">
+                    <div>
+                        <i class="fa-regular fa-circle-user fa-9x"></i>
+                        <a class="wd-profile-edit-button btn btn-light active" href="EditProfile/screen.html"> 
+                            <i class="fa-solid fa-pencil"></i> 
+                            Edit Profile
+                        </a>
+                  
+                    </div>
+                    <h1>Chenrong Su</h1><br/>
                     <h2>Contact</h2>
-                    <p>No registered service, you can add some on <a href="#">setting</a> page.</p>
+                    <p>No registered service, you can add some on <a href="#">Setting</a> page.</p>
                     <h2>Biography</h2>
                     <p>MS.CS Student at Northeastern Univeristy</p>
                     <h2>Links</h2>
-                    <a href="#">GitHub</a>
-                </td>
-            </tr>
-        </tbody>
-    </table> -->
+                    <p><a href="https://www.youtube.com/@WebDevTV"><i class="fa-solid fa-link"></i> YouTube</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>

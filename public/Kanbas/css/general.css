@@ -1,0 +1,32 @@
+.wd-general-header{
+    padding-left: 20px;
+    justify-content: left;
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 85px;
+}
+.wd-general-header i{
+    margin-right: 50px;
+}
+.wd-general-header span{
+    font-size: larger;
+}
+.wd-general-content{
+    flex: 0.99;
+}
+
+.wd-general-content-body{
+    display: flex;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.wd-general-content-body > :nth-child(2) {
+    margin-left: 280px;
+}
+.wd-flex{
+    display: flex;
+}
+.wd-block{
+    display: block;
+}

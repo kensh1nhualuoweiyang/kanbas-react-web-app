@@ -1,0 +1,42 @@
+body * {
+    font-family: Arial;
+    font-size: medium;
+}
+.wd-nav-sidebar {
+    list-style: none; 
+    width: 85px;
+    background-color: black;
+    height: 100vh;       
+    padding: 0px;       
+    position: fixed;
+
+}
+
+.wd-nav-sidebar img {
+    width: 100%;
+    height: auto;
+}
+
+.wd-nav-sidebar li {
+    padding: 5px;
+    text-align: center;
+}
+
+.wd-nav-sidebar li a {
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.wd-nav-sidebar li.kanbas-nav-active{
+    background-color: white;
+    color: #c11515;
+}
+.wd-nav-sidebar li.kanbas-nav-active div{
+    background-color: white;
+    color: #c11515;
+}

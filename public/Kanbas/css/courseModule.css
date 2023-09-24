@@ -1,0 +1,29 @@
+.wd-module-item-title{
+    justify-content: left;
+    text-align: left;
+}
+
+.wd-course-module-content ul.list-group li{
+    box-shadow: inset 5px 0 0 0 #5dc219;
+    font-weight: 600;
+    color: #646262;
+}
+
+.wd-module-external-link{
+    color:#c11515;
+    text-decoration: none;
+}
+
+.wd-module-assignment-link{
+    text-decoration: none;
+    color:  #333538;
+}
+
+.wd-course-module-content ul li div a:hover{
+    text-decoration: underline;
+}
+
+.wd-course-module-content ul li i{
+    margin-top: 2px;
+}
+

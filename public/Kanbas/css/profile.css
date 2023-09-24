@@ -1,0 +1,100 @@
+
+.wd-profile-edit-button{
+    margin-left: 75%;
+    height: min-content;
+}
+.wd-profile-main-content{
+    width: 100%;
+}
+.wd-profile-main-content>div>button>a{
+    text-decoration: none;
+    color: black;
+}
+.wd-profile-main-content div{
+    display: flex;
+    margin-left: 20px;
+}
+.wd-profile-main-content h1{
+    font-size: 32px; 
+    margin-top: 15px;
+    margin-left: 20px;
+    justify-content: left;
+    text-align: left;
+}
+.wd-profile-main-content h2{
+    font-size: 30px; 
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    justify-content: left;
+    text-align: left;
+}
+.wd-profile-main-content h3{
+    font-size: 20px; 
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-content: left;
+    text-align: left;
+}
+.wd-profile-main-content p{
+    width: 220 px;
+    font-size: 20; 
+    margin-left: 20px;
+    margin-bottom: 10px;
+    justify-content: left;
+    text-align: left;
+}
+
+.wd-profile-main-content a{
+    color: #c11515;
+}
+
+.wd-profile-name-title-input{
+    width: 300px;
+    margin-left: 15px;
+
+}
+
+.wd-profile-main-content select{
+    width: 200px;
+    margin-left: 15px;
+}
+
+.wd-profile-main-content textarea{
+    width: 600px;
+    margin-left: 15px;
+}
+
+.wd-profile-main-content textarea{
+    width: 600px;
+    margin-left: 15px;
+}
+
+.wd-profile-link-input{
+    width: 150px;
+
+}
+
+.wd-profile-title-input{
+    width: 150px;
+    margin-left: 10px;
+}
+
+
+
+.wd-profile-flex-display i{
+    margin-top: 10px;
+}
+.wd-profile-add-link{
+    margin-top: 5px;
+}
+.wd-profile-finish-button{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.wd-profile-arrow-link-title{
+    margin-top: 10px;
+}
