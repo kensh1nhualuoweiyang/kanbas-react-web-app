@@ -4,35 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignments</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
+    <link href="/Kanbas/css/general.css" rel="stylesheet" />
+    <link href="/Kanbas/css/subNav.css" rel="stylesheet" />
+    <link href="/Kanbas/css/kNav.css" rel="stylesheet" />
+    <link href="/Kanbas/css/profile.css" rel="stylesheet" />
+    <link href="/Kanbas/css/courseHome.css" rel="stylesheet" />
+    <link href="/Kanbas/css/courseModule.css" rel="stylesheet" />
+    <link href="/Kanbas/css/assignments.css" rel="stylesheet" />
+
 </head>
 
 <body>
-    <table cellspacing="30">
-        <tr>
-            <td valign="top">
-                <!-- Main Navigator Column !-->
-                <ul>
-                    <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                    <li><a href="#">Groups</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </td>
+    <div class="wd-flex">
+        <ul class="wd-nav-sidebar">
+            <li><img src="/northeastern_logo.png"></li>
+            <li>
+                <a href="/Kanbas/Account/Profile/screen.html">
+                    <i class="far fa-user fa-xl" style="color: #b7c1d1;"></i>
+                    <div>Account</div>
+                </a>
+            </li>
+            <li>
+                <a href="/Kanbas/Dashboard/screen.html">
+                    <i class="fa-solid fa-gauge-high fa-xl" style="color: #c11515;"></i>
+                    <div>Dashboard</div>
+                </a>
+            </li>
+            <li class="kanbas-nav-active">
+                <a href="/Kanbas/Courses/Home/screen.html">
+                    <i class="fa-solid fa-book fa-xl" style="color: #c11515;"></i>
+                    <div>Courses</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="wd-nav-sidebar-row-element fa-regular fa-calendar-days fa-xl" style="color: #c11515;"></i>
+                    <div>Calendar</div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="wd-nav-sidebar-row-element fa-solid fa-inbox fa-xl" style="color: #c11515;"></i>
+                    <div>Inbox</div>
+                </a>
+            </li>
+            <li>
+                <a href="#"> <i class="wd-nav-sidebar-row-element fa-regular fa-clock fa-xl"
+                        style="color: #c11515;"></i>
+                    <div>History</div>
+                </a>
+            </li>
+            <li><a href="#"><i class="wd-nav-sidebar-row-element fa-solid fa-network-wired fa-xl"
+                        style="color: #c11515;"></i>
+                    <div>Studio</div>
+                </a></li>
+            <li><a href="#"> <i class="wd-nav-sidebar-row-element fa-solid fa-arrow-right-from-bracket fa-xl"
+                        style="color: #c11515;"></i>
+                    <div>Commons</div>
+                </a></li>
+            <li><a href="#"> <i class="wd-nav-sidebar-row-element fa-regular fa-circle-question fa-2x"
+                        style="color: #c11515;"></i>
+                    <div>Help</div>
+                </a></li>
 
-            <!-- Sub Navigator Column !-->
-            <td valign="top">
-                <!-- Sub Navigator Column !-->
-                <ul>
+        </ul>
+        <div class="wd-general-content">
+            <div class="wd-general-header">
+                <div class="wd-flex">
+                    <div class="wd-home-header-icon"><i class="fa-solid fa-bars fa-xl" style="color: #c11515;"></i>
+                    </div>
+                    <div class="pe-2">
+                        <nav style="--bs-breadcrumb-divider: '>';">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><span>MOCK.COURSE:TERM:SECTION</span></a></li>
+                                <li class="breadcrumb-item active"><span>Assignments</span></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="wd-general-content-body">
+                <ul class="wd-sub-nav">
                     <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                    <li><a href="/Kanbas/Courses/Modules/screen.html">Module</a></li>
+                    <li><a href="#">Module</a></li>
                     <li><a href="#">Piazza</a></li>
                     <li><a href="#">Zoom Meeting</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                    <li class="wd-tab-active"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
                     <li><a href="#">Quizzes</a></li>
                     <li><a href="/Kanbas/Courses/Grades/screen.html">Grade</a></li>
                     <li><a href="#">People</a></li>
@@ -45,35 +108,167 @@
                     <li><a href="#">Outcomes</a></li>
                     <li><a href="#">Collaborations</a></li>
                     <li><a href="#">Syllabus</a></li>
+                    <li><a href="#">Progress Reports (EAB Navigate)</a></li>
                     <li><a href="/Kanbas/Courses/Settings/CourseDetail/screen.html">Settings</a></li>
                 </ul>
-            </td>
-            <td valign="top">
-                <!--Import From Index-->
-                <input type="text" placeholder="Search for Assignments">
-                <button type="button">Group</button>
-                <button type="button">Assignment</button>
-                <select id="moreOption">
-                    <option selected value=editDate>Edit Assignment Dates</option>
-                    <option value="groupWeight">Assignment Group Weight</option>
-                    <option value="gradeScope">Gradescope 1.3</option>
-                    <option value="commonFav">Common Favorites</option>
-                </select>
-                <hr />
+                <div class="wd-assignment-content">
 
-                <h2>
-                    Assignments 40% of Total
-                    <select id="assignmentOpt">
-                        <option selected value="editAssign">Edit</option>
-                        <option value="assignSpeedGrad">Speed Grader</option>
-                        <option value="duplicateAssign">Duplicate</option>
-                        <option value="deleteAssign">Delte</option>
-                        <option value="moveAssign">Move To...</option>
-                        <option value="sentAssign">Sent To...</option>
-                        <option value="copyAssign">Copy To...</option>
-                        <option value="shareAssignToCom">Share to Common</option>
-                    </select>
-                </h2>
+                    <div class="row">
+                        <div class="col-8">
+                            <input class="form-control w-25" type="text" placeholder="Search For Assignment">
+                        </div>
+                        <div class="col-4">
+                            <div class="float-end">
+                                <div class="d-inline-flex gap-1">
+                                    <button type="button" class="btn btn-sm btn-secondary"><i class="fa fa-plus"></i>
+                                        Assignment</button>
+                                    <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-plus"></i>
+                                        Module</button>
+                                    <button type="button" class="btn btn-sm btn-secondary">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <ul class="list-group mb-5">
+                        <button type="button"
+                            class="wd-assignment-item-title list-group-item list-group-item-secondary">
+                            <i class="fa-solid fa-ellipsis-vertical me-1" style="color: #898b90;"></i>
+                            <i class="fa-solid fa-circle-chevron-down fa-sm me-1"></i>
+                                Assignments
+                            <div class="float-end">
+                                <span class="badge rounded-3 bg-transparent">40 % of Total</span>
+                                <i class="fa fa-plus me-1" style="color: #58595c; "></i>
+                                <i class="fa-solid fa-ellipsis-vertical " style="color: #898b90;"></i>
+                            </div>
+                        </button>
+                        <li class="list-group-item">
+                            <div class="d-flex gap-4 align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #4a4b4e;"></i>
+                                <i class="fa-solid fa-file-invoice fa-lg" style="color:#57a125;"></i>
+                                <div class="wd-assignment-desc">
+                                    <a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html" class="mb-0">A1
+                                        SETUP</h2></a>
+                                    <p class="mb-0">Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022)
+                                        Module |</p>
+                                    <p class="mb-0"><span>Due</span> Sep 18, 2022 at 11:59:pm | 100 pts</p>
+                                </div>
+                                <i class="fa-solid fa-circle-check fa-lg" style="color:#57a125;"> </i>
+                                <i class="btn fa-solid fa-ellipsis-vertical" style="color: #4a4b4e;"></i>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex gap-4 align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #4a4b4e;"></i>
+                                <i class="fa-solid fa-file-invoice fa-lg" style="color:#57a125;"></i>
+                                <div class="wd-assignment-desc">
+                                    <a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html" class="mb-0">A2
+                                        HTML</h2></a>
+                                    <p class="mb-0">Week 1 - HTML - Week starting on Monday September 12th (9/12/2022)
+                                        Module |</p>
+                                    <p class="mb-0"><span>Due</span> Sep 25, 2022 at 11:59:pm | 100 pts</p>
+                                </div>
+                                <i class="fa-solid fa-circle-check fa-lg" style="color:#57a125;"> </i>
+                                <i class="btn fa-solid fa-ellipsis-vertical" style="color: #4a4b4e;"></i>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex gap-4 align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #4a4b4e;"></i>
+                                <i class="fa-solid fa-file-invoice fa-lg" style="color:#57a125;"></i>
+                                <div class="wd-assignment-desc">
+                                    <a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html" class="mb-0">A3
+                                        CSS</h2></a>
+                                    <p class="mb-0">Week 2 - CSS - Week starting on Monday September 19th (9/19/2022)
+                                        Module |</p>
+                                    <p class="mb-0"><span>Due</span> Oct 2, 2022 at 11:59:pm | 100 pts</p>
+                                </div>
+                                <i class="fa-solid fa-circle-check fa-lg" style="color:#57a125;"> </i>
+                                <i class="btn fa-solid fa-ellipsis-vertical" style="color: #4a4b4e;"></i>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex gap-4 align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #4a4b4e;"></i>
+                                <i class="fa-solid fa-file-invoice fa-lg" style="color:#57a125;"></i>
+                                <div class="wd-assignment-desc">
+                                    <a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html" class="mb-0">A4
+                                        BOOTSTRAP</h2></a>
+                                    <p class="mb-0">Week 3 - Bootstrap - Week starting on Monday September 26th (9/26/2022)
+                                        Module |</p>
+                                    <p class="mb-0"><span>Due</span> Oct 10, 2022 at 11:59:pm | 100 pts</p>
+                                </div>
+                                <i class="fa-solid fa-circle-check fa-lg" style="color:#57a125;"> </i>
+                                <i class="btn fa-solid fa-ellipsis-vertical" style="color: #4a4b4e;"></i>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex gap-4 align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #4a4b4e;"></i>
+                                <i class="fa-solid fa-file-invoice fa-lg" style="color:#57a125;"></i>
+                                <div class="wd-assignment-desc">
+                                    <a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html" class="mb-0">A5
+                                        JAVASCRIPT</h2></a>
+                                    <p class="mb-0">Week 4 - JavaScript - Week starting on Monday Oct 3rd (10/03/2022)
+                                        Module |</p>
+                                    <p class="mb-0"><span>Due</span> Oct 16, 2022 at 11:59:pm | 100 pts</p>
+                                </div>
+                                <i class="fa-solid fa-circle-check fa-lg" style="color:#57a125;"> </i>
+                                <i class="btn fa-solid fa-ellipsis-vertical" style="color: #4a4b4e;"></i>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex gap-4 align-items-center">
+                                <i class="fa-solid fa-ellipsis-vertical" style="color: #4a4b4e;"></i>
+                                <i class="fa-solid fa-file-invoice fa-lg" style="color:#57a125;"></i>
+                                <div class="wd-assignment-desc">
+                                    <a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html" class="mb-0">A6
+                                        REACT</h2></a>
+                                    <p class="mb-0">Week 5 - React & Routing - Week starting on Monday Oct 10th (10/10/2022)
+                                        Module |</p>
+                                    <p class="mb-0"><span>Due</span> Oct 23, 2022 at 11:59:pm | 100 pts</p>
+                                </div>
+                                <i class="fa-solid fa-circle-check fa-lg" style="color:#57a125;"> </i>
+                                <i class="btn fa-solid fa-ellipsis-vertical" style="color: #4a4b4e;"></i>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+</body>
+
+<!-- <body>
+    <table cellspacing="30">
+        <tr>
+            <td valign="top">
+        
                 <ul>
                     <li><a href="/Kanbas/Courses/Assignments/AssignmentEditor/screen.html">A1 - ENV + HTML<br> Multiple
                             Modules</a> | Not Available</li>
@@ -154,7 +349,7 @@
             </td>
         </tr>
     </table>
-</body>
+</body> -->
 
 
 </html>

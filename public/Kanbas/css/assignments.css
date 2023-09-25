@@ -1,0 +1,46 @@
+.wd-assignment-content {
+    width: 100%;
+}
+.wd-assignment-header{
+    justify-content: center;
+    align-items: center;
+}
+.wd-assignment-item-title{
+    text-align: left;
+    color: rgb(51, 49, 49);
+    font-weight: 550;
+}
+.wd-assignment-item-title div span{
+    color: rgb(37, 35, 35);
+    border: 1px solid rgb(43, 41, 41);
+}
+.wd-assignment-content ul *.list-group-item{
+    border-radius: 0;
+}
+
+.wd-assignment-content li{
+    box-shadow: inset 5px 0 0 0 #5dc219;
+}
+.wd-assignment-content li a{
+    text-decoration: none;
+    color: rgb(85, 74, 74);
+    font-weight: 600;
+}
+.wd-assignment-content li a:hover{
+    text-decoration: underline;
+}
+
+.wd-assignment-content li p{
+    font-size: x-small;
+    color: gray;
+    text-wrap: wrap;
+    margin-top: 0px;
+}
+.wd-assignment-content li p span{
+    font-size: x-small;
+    font-weight: 550;
+}
+.wd-assignment-desc{
+    width: 90%;
+}
+
