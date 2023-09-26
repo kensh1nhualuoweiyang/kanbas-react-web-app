@@ -1,66 +1,178 @@
-<select id = "moreOption">
-    <option value = "speedGrad" selected>SpeedGrader</option>
-    <option value = "delete" >Delete</option>
-</select>
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Assignment</title>
 
-<label for="assignName" ><h2>Assignment Name</h2></label>
-<input id = "assignName" type="text" placeholder="A1-ENV + HTML"><br><br>
-<textarea cols="30" rows="3">Assignment Description</textarea><br><br>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
+    <link href="/Kanbas/css/general.css" rel="stylesheet" />
+    <link href="/Kanbas/css/subNav.css" rel="stylesheet" />
+    <link href="/Kanbas/css/kNav.css" rel="stylesheet" />
+    <link href="/Kanbas/css/profile.css" rel="stylesheet" />
+    <link href="/Kanbas/css/courseHome.css" rel="stylesheet" />
+    <link href="/Kanbas/css/courseModule.css" rel="stylesheet" />
+    <link href="/Kanbas/css/assignments.css" rel="stylesheet" />
+    <link href="/Kanbas/css/editAssignment.css" rel="stylesheet" />
+</head>
+<div class="wd-edit-assignment-content">
+    <div class="float-end">
+        <i class="fa-solid fa-circle-check me-2 wd-color-green"><span>Published</span></i>
+        <button class="btn btn-secondary rounded-1" type="button"><i
+                class="fa-solid fa-ellipsis-vertical"></i></button>
+    </div>
+    <br>
+    <hr class="mt-4 mb-2">
+    <label for="name" class="form-label">Assignment Name</label>
+    <input type="text" id="name" class="form-control mb-3">
+    <textarea type="text" class="form-control mb-2" rows="3"></textarea>
 
-<label for="pts">Points</label>
-<input id = "pts" type = "number" placeholder="100" max="100" min="0"><br><br>
+    <div class="row wd-assignment-detail">
+        <div class="col-5 text-end">
+            <label for="points" class="form-label">Points</label>
+        </div>
+        <div class="col-7 align-items-center">
+            <input type="number" id="points" class="form-control mb-3 w-25">
+        </div>
+    </div>
 
-<label for="assignmentGrp">Assignment Group</label>
-<select id = "assignmentGrp">
-    <option value = "ASSIGNMENTS" selected>ASSIGNMENTS</option>
-</select><br><br>
+    <div class="row wd-assignment-detail">
+        <div class="col-5 text-end">
+            <label for="group" class="form-label">Assignment Group</label>
+        </div>
+        <div class="col-7 align-items-center">
+            <select id="group" class="form-select w-50 mb-3">
+                <option selected>Assignment</option>
 
-<label for="displayOpt">Display Grade as</label>
-<select id = "displayOpt">
-    <option value = "percent" selected>Percentage</option>
-</select><br /><br />
+            </select>
+        </div>
+    </div>
+    <div class="row wd-assignment-detail">
+        <div class="col-5 text-end">
+            <label for="display" class="form-label">Display Grade as</label>
+        </div>
+        <div class="col-7 align-items-center">
+            <select id="display" class="form-select w-50 mb-3">
+                <option selected>Percentage</option>
 
-<label for="submitType">Submission Type</label>
-<select id = "submitType">
-    <option value = "online" selected>Online</option>
-</select><br /><br />
+            </select>
+        </div>
+    </div>
+    <div class="row wd-assignment-detail">
+        <div class="col-5 text-end">
 
-<label>Online Entry Options</label><br>
-<label><input type = "checkbox">Text Entry</label><br />
-<label><input type = "checkbox">Website URL</label><br />
-<label><input type = "checkbox">Media Recorading</label><br />
-<label><input type = "checkbox">Student Annotation</label><br />
-<label><input type = "checkbox">File Upload</label><br /><br />
+        </div>
+        <div class="col-7 align-items-center">
+            <input class=" form-check-input" type="checkbox" value="" id="doNotCount">
+            <label class="form-check-label mb-3" for="doNotCount">
+                Do not count this assignment towards the final grade
+            </label>
+        </div>
+    </div>
+    <div class="row wd-assignment-detail">
+        <div class="col-5 text-end">
+            Submission Type
+        </div>
+        <div class="col-7 align-items-center ">
+            <div class="card mb-3">
+                <div class="wd-asign-task card-body">
+                    <select id="display" class="form-select w-75 mb-3">
+                        <option selected>Online</option>
+                    </select>
 
+                    <label for="onlineOption" class="form-label wd-asign-label">Online Entry
+                        Options</label>
+                    <div id="onlineOption">
+                        <div class="row">
+                            <div class="col">
+                                <input class=" form-check-input" type="checkbox" id="textEty">
+                                <label class="form-check-label mb-3" for="textEty">
+                                    Text Entry
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input class=" form-check-input" type="checkbox" id="url">
+                                <label class="form-check-label mb-3" for="url">
+                                    Website URL
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input class=" form-check-input" type="checkbox" id="media">
+                                <label class="form-check-label mb-3" for="media">
+                                    Media Recorading
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input class=" form-check-input" type="checkbox" id="annotation">
+                                <label class="form-check-label mb-3" for="annotation">
+                                    Student Annotation
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input class=" form-check-input" type="checkbox" id="file">
+                                <label class="form-check-label mb-3" for="file">
+                                    File Updaload
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<label for="submitAtt">Submission Attempts</label>
-<select id = "submitAtt">
-    <option value = "unli" selected>Unlimited</option>
-</select><br /><br />
+            </div>
+        </div>
+    </div>
 
-<label for="plagRev">Plagiarism Review</label>
-<select id = "plagRev">
-    <option value = "none" selected>None</option>
-</select><br /><br />
+    <div class="row wd-assignment-detail">
+        <div class="col-5 text-end">
+            Assign
+        </div>
+        <div class="col-7 align-items-center ">
+            <div class="card mb-3">
+                <div class="wd-asign-task card-body">
+                    <label for="assignTo" class="form-label wd-asign-label">Assign To</label>
+                    <input type="text" id="assignTo" class="form-control mb-3">
+                    <label for="dueDate" class="form-label wd-asign-label">Due</label>
+                    <input type="date" id="dueDate" class="form-control mb-3">
 
-Group Assignment<br>
-<label><input type = "checkbox">This is a group assignment</label><br /><br />
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="available" class="form-label wd-asign-label">Available
+                                From</label>
+                            <input type="date" id="availableFrom" class="form-control mb-3">
+                        </div>
+                        <div class="col-6">
+                            <label for="until" class="form-label wd-asign-label">Until</label>
+                            <input type="date" id="until" class="form-control mb-3">
+                        </div>
+                    </div>
 
-<label>Peer Review</label><br>
-<label><input type = "checkbox">Require Peer Review</label><br /><br />
+                </div>
+                <button type="button" class="btn btn-secondary card-footer"><i
+                        class="fa fa-plus me-2"></i>Add</button>
+            </div>
+        </div>
 
-<p>Assign</p>
-<label >Assign To <br /><input type="text" id = "asignTo" placeholder="Everyone"></label><br><br />
+    </div>
+    <hr>
 
+    <input class=" form-check-input" type="checkbox" value="" id="notify">
+    <label class="form-check-label mb-3" for="notify">
+        Notify user that this contents has changed
+    </label>
+    <div class="float-end">
 
-<label>Due <input type="date" id = "due"></label><br /><br />
-
-
-<label>Available From <input type="date" id = "from"><br /><br /></label>
-
-
-<label>Until <input type="date" id = "to"><br /><br /></label>
-
-
-<button type="button"><a href="/Kanbas/Courses/Assignments/screen.html">Save</a></button>
-<button type="button"><a href="/Kanbas/Courses/Assignments/screen.html">Cancel</a></button>
+        <a href="/Kanbas/Courses/Assignments/screen.html" class="btn btn-secondary mb-2"
+            type="button">Cancel</a>
+        <a href="/Kanbas/Courses/Assignments/screen.html" class="btn btn-danger mb-2"
+            type="button">Save</a>
+    </div>
+    <hr>
+</div>

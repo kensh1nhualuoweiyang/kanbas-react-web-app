@@ -30,3 +30,31 @@
 .wd-block{
     display: block;
 }
+
+.wd-color-red{
+    color: #c11515;
+}
+
+.wd-no-text-deco{
+    text-decoration: none;
+}
+
+.wd-hover-underline:hover{
+    text-decoration: underline;
+}
+
+.wd-color-grey{
+    color:#898b90;
+}
+
+.wd-color-green{
+    color: #57a125;
+}
+
+.wd-color-black{
+    color: #4a4b4e;
+}
+
+.wd-color-light-grey{
+    color:#b7c1d1;
+}
