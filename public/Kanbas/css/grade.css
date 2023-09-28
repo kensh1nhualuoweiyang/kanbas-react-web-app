@@ -1,0 +1,17 @@
+.wd-grade-content{
+    width: 100%;
+}
+.wd-grade-content th{
+    text-align: center;
+}
+.wd-grade-content td{
+    text-align: center;
+}
+.wd-grade-content td input{
+    text-align: center;
+    width: 35%;
+}
+.wd-grade-content label{
+    font-weight: 550;
+    font-size: larger;
+}

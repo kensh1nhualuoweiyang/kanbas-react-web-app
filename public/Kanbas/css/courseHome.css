@@ -78,12 +78,12 @@
 .wd-course-body {
     display: flex;
     flex: 1;
-    margin-left: 10px;
+    margin-left: 100px;
     margin-top: 10px;
 }
 
 .wd-course-module-content{
-    margin-left: 280px;
+    margin-left: 180px;
 }
 .wd-course-hidden-menu{
     height:65px;

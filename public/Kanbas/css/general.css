@@ -18,11 +18,11 @@
 .wd-general-content-body{
     display: flex;
     flex: 1;
-    margin-left: 10px;
+    margin-left: 100px;
 }
 
 .wd-general-content-body > :nth-child(2) {
-    margin-left: 280px;
+    margin-left: 180px;
 }
 .wd-flex{
     display: flex;
@@ -57,4 +57,31 @@
 
 .wd-color-light-grey{
     color:#b7c1d1;
+}
+.wd-bg-color-light-grey{
+    background-color:#b7c1d1;
+}
+.wd-font-large{
+    font-size: larger;
+}
+.wd-width-80{
+    width: 80%;
+}
+
+.wd-page-title{
+    font-size: xx-large;
+}
+.wd-color-blue{
+    color:#1442ca;
+}
+
+.card-title{
+    font-weight: 550;
+    font-size: medium;
+}
+.card-body a{
+    text-decoration: none;
+}
+.card-body a:hover{
+    text-decoration: underline;
 }

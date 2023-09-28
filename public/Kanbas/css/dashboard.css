@@ -1,0 +1,20 @@
+.wd-dashboard-body div.card{
+    width: 250px;
+    height: 300px;
+}
+.wd-dashboard-body{
+    margin-left: 3%;
+}
+.wd-dashboard-body div.card-footer{
+    border:0;
+    background-color:white;
+}
+.wd-dashboard-body div.card-footer i:hover{
+    color: #c11515;
+}
+.wd-dashboard-body div.row{
+    width: 80%;
+}
+.wd-dashboard-body div.col{
+    width: 300px;
+}

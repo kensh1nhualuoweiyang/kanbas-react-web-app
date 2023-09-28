@@ -5,8 +5,7 @@ body * {
 .wd-sub-nav{
     list-style: none; 
     width: 170px;
-    background-color: white;
-    margin-left: 85px;        
+    background-color: white;      
     padding: 0px;  
     position: fixed;
 }
