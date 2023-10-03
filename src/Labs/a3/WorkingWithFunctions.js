@@ -7,6 +7,11 @@ import ArrayLength from "./ArrayIndexAndLength";
 import AddRemove from "./AddRemoveArray";
 import ForLoop from "./FoorLoops";
 import MapFunction from "./MapFunctions";
+import House from "./House";
+import Spread from "./Spread";
+import Destructing from "./Destructing";
+import FunctionDestructing from "./FunctionDestructing";
+import PathParameters from "./PathParameters";
 function WorkingWithFunctions(){
     return(
         <div>
@@ -19,6 +24,11 @@ function WorkingWithFunctions(){
             <AddRemove></AddRemove>
             <ForLoop></ForLoop>
             <MapFunction></MapFunction>
+            <House></House>
+            <Spread></Spread>
+            <Destructing></Destructing>
+            <FunctionDestructing></FunctionDestructing>
+            <PathParameters></PathParameters>
         </div>
     );
 }
