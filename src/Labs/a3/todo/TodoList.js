@@ -7,7 +7,7 @@ const TodoList = () => {
      <ul className="list-group">
        {
          todos.map(todo => {
-           return(<TodoItem todo={todo}/>);
+           return(<TodoItem task={todo}/>);
          })
        }
      </ul>

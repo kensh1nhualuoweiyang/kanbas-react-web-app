@@ -1,6 +1,6 @@
 const TodoItem = (
     {
-        todo = {
+        task = {
             done: true,
             title: 'Buy milk',
             status: 'COMPLETED'
@@ -9,10 +9,10 @@ const TodoItem = (
     return (
         <li className="list-group-item">
             <input type="checkbox"
-                defaultChecked={todo.done} />
+                defaultChecked={task.done} />
             &nbsp;
-            {todo.title}
-            ({todo.status})
+            {task.title}
+            ({task.status})
         </li>
     );
 }
