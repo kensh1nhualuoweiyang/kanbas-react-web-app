@@ -30,7 +30,7 @@ function KanbasNavigator() {
             <li><img src={logo} /></li>
             {links.map((link, index) => (
                 <li key={index} className={`${pathname.includes(link) && "kanbas-nav-active"}`}>
-                    <Link to={`/${link}`}>
+                    <Link to={`/Kanbas/${link}`}>
                         <i className={`${linkIconMap[link]}`}></i>
                         <div>{linkIconMap[link]}</div>
                         <div>{link}</div>
