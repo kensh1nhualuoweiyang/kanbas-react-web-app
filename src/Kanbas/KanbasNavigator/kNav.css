@@ -40,3 +40,17 @@ body * {
     background-color: white;
     color: #c11515;
 }
+
+.wd-kNav-user-icon{
+    color: aliceblue;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.wd-kNav-icon{
+    color:#c11515;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+}

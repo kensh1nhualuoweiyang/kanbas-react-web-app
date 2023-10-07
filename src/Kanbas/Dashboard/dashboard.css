@@ -4,6 +4,7 @@
 }
 .wd-dashboard-body{
     margin-left: 3%;
+    flex:1;
 }
 .wd-dashboard-body div.card-footer{
     border:0;
@@ -17,4 +18,23 @@
 }
 .wd-dashboard-body div.col{
     width: 300px;
+}
+
+.card-title{
+    font-weight: 550;
+    font-size: medium;
+}
+.card-body a{
+    text-decoration: none;
+}
+.card-body a:hover{
+    text-decoration: underline;
+}
+
+.card-footer a svg{
+    height: 2em;
+    width: 20px;
+}
+.card-footer a svg:hover{
+   color: #c11515;
 }

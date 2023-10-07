@@ -75,13 +75,3 @@
     color:#1442ca;
 }
 
-.card-title{
-    font-weight: 550;
-    font-size: medium;
-}
-.card-body a{
-    text-decoration: none;
-}
-.card-body a:hover{
-    text-decoration: underline;
-}

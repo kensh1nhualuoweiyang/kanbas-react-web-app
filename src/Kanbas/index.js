@@ -1,10 +1,19 @@
-import { Link } from "react-router-dom";
-import Nav from "../Nav";
+import { Routes, Navigate, Route } from "react-router-dom";
+import KanbasNavigator from "./KanbasNavigator";
+import Account from "./Account";
+import Dashboard from "./Dashboard";
+import Courses from "./Courses";
+import "./css/general.css"
 function Kanbas() {
     return (
-        <div>
-            <Nav/>
-            <h1>Kanbas</h1>
+        <div className="wd-flex">
+            <KanbasNavigator></KanbasNavigator>
+            <Routes>
+                <Route path="/" element = {<Navigate to="Dashboard"/>}/>
+                <Route path="Account" element = {<Account />}/>
+                <Route path="Dashboard" element = {<Dashboard />}/>
+                <Route path="Courses" element = {<Courses />}/>
+            </Routes>
         </div>
     )
 }
