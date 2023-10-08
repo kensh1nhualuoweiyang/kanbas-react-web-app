@@ -75,3 +75,6 @@
     color:#1442ca;
 }
 
+.wd-nav-bread-crumb{
+    --bs-breadcrumb-divider: '>'
+}
