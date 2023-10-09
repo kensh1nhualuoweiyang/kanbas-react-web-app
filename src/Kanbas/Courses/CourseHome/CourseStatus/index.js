@@ -85,7 +85,7 @@ function CourseStatus() {
                 <div className="d-flex wd-corse-status-upcoming-header">
                     <h2>Coming Up</h2>
                     <div className="float-end">
-                        <Link to="#" className="wd-course-status-list-item ">
+                        <Link to="" className="wd-course-status-list-item ">
                             <AiOutlineCalendar className="me-1 wd-color-light-grey" />
                             View Calendar
                         </Link>
@@ -95,11 +95,12 @@ function CourseStatus() {
                 <div className="list-group">
                     {
                         comingUp.map((event,index) => (
-                            <Link key={index} href="#" className="wd-course-status-list-item list-group-item mt-0 pt-0">
-                                <div className="d-flex align-items-center">
+                            <Link key={index} href="" className="wd-course-status-list-item list-group-item mt-0 pt-0">
+                                <div className="d-inline-flex align-items-center">
                                     <AiOutlineCalendar className="me-1 wd-color-light-grey" />
                                     <span>{event.title}</span>
                                 </div>
+                                <br/>
                                 <small>{event.descript} {event.date} at {event.time}</small>
                             </Link>
                         ))

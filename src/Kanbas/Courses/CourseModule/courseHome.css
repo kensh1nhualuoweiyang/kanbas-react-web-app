@@ -44,16 +44,21 @@
     padding-right: 0px;
     padding-top: 0px;
     color: #c11515;
-    font-size: small;
     text-decoration: none;
     margin-bottom: 10px;
 
 }
 
+
+
 .wd-course-status-list-item>div :nth-child(2) {
     color: #c11515;
     font-size: medium;
     margin-left: 5px;
+    white-space: nowrap;      
+    overflow: hidden;        
+    text-overflow: ellipsis; 
+    max-width: 200px;
 }
 
 .list-group>a>small {
