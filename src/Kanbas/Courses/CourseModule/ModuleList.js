@@ -13,7 +13,7 @@ import { MdOutlineOutput } from "react-icons/md"
 import { LuClipboardList } from "react-icons/lu"
 function ModuleList() {
     const { courseId } = useParams();
-    const matchingModule = CourseInfo.moduleList.filter((module) => module.courseId === courseId)
+    const matchingModule = CourseInfo.moduleList.filter((module) => module._id === courseId)
     const modules = matchingModule.map(module => (module.modules)).flat();
     return (
         <div className="wd-course-module-content">

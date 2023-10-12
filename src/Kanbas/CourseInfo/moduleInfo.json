@@ -1,6 +1,6 @@
 [
     {
-        "courseId": "17387",
+        "_id": "17387",
         "modules": [
             {
                 "moduleName": "Resources",
@@ -160,7 +160,7 @@
         ]
     },
     {
-        "courseId": "31393",
+        "_id": "31393",
         "modules": [
             {
                 "moduleName": "Resources",
@@ -320,7 +320,7 @@
         ]
     },
     {
-        "courseId": "45607",
+        "_id": "45607",
         "modules": [
             {
                 "moduleName": "Resources",
