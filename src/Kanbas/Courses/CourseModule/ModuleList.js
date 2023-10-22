@@ -49,7 +49,7 @@ function ModuleList() {
                     <button type="button" className="btn btn-sm btn-danger" onClick={() => dispatch(addModule({...module,courseId:courseId}))} >
                         <GrAdd className="me-1" />
                         Module</button>
-                    <button type="button" className="btn btn-sm btn-danger" onClick={dispatch(updateModule())}>
+                    <button type="button" className="btn btn-sm btn-danger" onClick={dispatch(()=>updateModule(module))}>
                         <AiFillEdit /> Update
                     </button>
                     <button type="button" className="btn btn-sm btn-secondary">

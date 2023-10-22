@@ -37,7 +37,6 @@ function Kanbas() {
         const newCourses = courses.map((item) => item._id === course._id ? course : item)
         setCourses(newCourses)
     }
-    console.log(store);
     return (
         <Provider store={store}>
             <div className="wd-flex">
