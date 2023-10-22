@@ -10,10 +10,10 @@ import Assignment from "./Assignment";
 import AssignmentEditor from "./Assignment/AssignmentEditor";
 import Grade from "./Grade";
 
-function Courses() {
+function Courses({courses}) {
     const { courseId } = useParams();
     const { pathname } = useLocation();
-    const course = CourseInfo.courseList.find((course) => course._id === courseId);
+    const course = courses.find((item) => item._id === courseId);
     const routes = [
         { path: "/", element:<Navigate to="Home"/>},
         { path: "Home", element: <CourseHome/>, name: "Home" },

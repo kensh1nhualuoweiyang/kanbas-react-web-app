@@ -1,4 +1,4 @@
-import ModuleList from "../CourseModule/ModuleList"
+import ModuleList from "../CourseModule/moduleList"
 import CourseStatus from "./CourseStatus"
 
 

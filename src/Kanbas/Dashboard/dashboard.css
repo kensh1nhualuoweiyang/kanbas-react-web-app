@@ -26,6 +26,12 @@
 }
 .card-body a{
     text-decoration: none;
+    
+}
+.card-text{
+    white-space: nowrap;      
+    overflow: hidden;        
+    text-overflow: ellipsis; 
 }
 .card-body a:hover{
     text-decoration: underline;
