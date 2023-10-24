@@ -16,7 +16,7 @@ import { AiFillDelete } from "react-icons/ai"
 
 import { GrAdd } from "react-icons/gr"
 import { useDispatch, useSelector } from "react-redux"
-import { addModule,setModule,updateModule,deleteModule } from "./moduleReducer"
+import { addModule,setModule,updateModule,deleteModule } from "./moduleRr"
 
 function ModuleList() {
     const { courseId } = useParams();
