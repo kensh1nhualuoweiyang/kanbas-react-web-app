@@ -22,8 +22,8 @@ function ModuleList() {
     const { courseId } = useParams();
 
 
-    const {modules} = useSelector((state) => state.moduleReducer)
-    const {module} = useSelector((state) => state.moduleReducer)
+    const {modules} = useSelector((state) => state.moduleRr)
+    const {module} = useSelector((state) => state.moduleRr)
     const dispatch = useDispatch()
 
 

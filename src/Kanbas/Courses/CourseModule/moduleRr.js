@@ -9,7 +9,7 @@ const initialState = {
 
 
 const moduleSlice = createSlice({
-    name:"module",
+    name:"modules",
     initialState,
     reducers:{
         addModule: (state,action) => {
