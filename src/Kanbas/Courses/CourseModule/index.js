@@ -1,4 +1,4 @@
-import ModuleList from "./moduleList"
+import ModuleList from "./ModuleList"
 
 function CourseModule(){
     return(
