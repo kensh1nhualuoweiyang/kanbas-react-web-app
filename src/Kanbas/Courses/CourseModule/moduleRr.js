@@ -22,7 +22,7 @@ const moduleSlice = createSlice({
         },
 
         updateModule: (state,action) => {
-            state.modules = state.modules.map((item) => item._id === action.payload._id ? module:action.payload)
+            state.modules = state.modules.map((item) => item._id === action.payload._id ? action.payload:item)
         },
 
         setModule: (state,action) => {
