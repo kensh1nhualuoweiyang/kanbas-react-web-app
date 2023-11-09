@@ -1,4 +1,4 @@
-import { useParams, Routes, Route, Navigate, useLocation} from "react-router-dom";
+import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import CourseNav from "./CourseNav";
 import "../css/general.css"
 import "./course.css"
@@ -14,28 +14,29 @@ function Courses() {
     const { courseId } = useParams();
     const { pathname } = useLocation();
 
-    const [course,setCourse] = useState({})
-    const url = "http://localhost:4000/api/courses"
+    const [course, setCourse] = useState({})
+    const API_BASE = process.env.REACT_APP_API_BASE;
+    const url = `${API_BASE}/courses`
     const findCourseById = async (courseId) => {
         const response = await axios.get(`${url}/${courseId}`)
         setCourse(response.data)
     }
-    
+
     useEffect(() => {
         findCourseById(courseId)
-    },[courseId])
+    }, [courseId])
 
     const routes = [
-        { path: "/", element:<Navigate to="Home"/>},
-        { path: "Home", element: <CourseHome/>, name: "Home" },
-        { path: "Module", element: <CourseModule/>, name: "Modules" },
-        { path: "Assignment", element: <Assignment/>, name: "Assignments" },
-        { path: "Assignment/:assignmentId", element: <AssignmentEditor/>, name: "Assignment Editor" },
-        { path: "Grade", element: <Grade/>, name: "Grades" }
+        { path: "/", element: <Navigate to="Home" /> },
+        { path: "Home", element: <CourseHome />, name: "Home" },
+        { path: "Module", element: <CourseModule />, name: "Modules" },
+        { path: "Assignment", element: <Assignment />, name: "Assignments" },
+        { path: "Assignment/:assignmentId", element: <AssignmentEditor />, name: "Assignment Editor" },
+        { path: "Grade", element: <Grade />, name: "Grades" }
     ];
-    const activeRoute= pathname.split("/").slice(4).map(segment => decodeURIComponent(segment));
+    const activeRoute = pathname.split("/").slice(4).map(segment => decodeURIComponent(segment));
 
-   
+
     return (
         <div className="wd-general-content">
             <div className="wd-general-header">
@@ -48,9 +49,9 @@ function Courses() {
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><span>{course.number}.{course.name}</span></li>
                                 {
-                                  activeRoute.map((route,index) => (
-                                    <li key={index} className={`breadcrumb-item ${index === activeRoute.length-1 &&"active"}`}><span>{route}</span></li>
-                                  ))  
+                                    activeRoute.map((route, index) => (
+                                        <li key={index} className={`breadcrumb-item ${index === activeRoute.length - 1 && "active"}`}><span>{route}</span></li>
+                                    ))
                                 }
                             </ol>
                         </nav>
@@ -63,11 +64,11 @@ function Courses() {
                 <CourseNav />
                 <Routes>
                     {
-                        routes.map((route,index) => (
-                            <Route key={index}  path={route.path} element={route.element} />
+                        routes.map((route, index) => (
+                            <Route key={index} path={route.path} element={route.element} />
                         ))
                     }
-                </Routes>          
+                </Routes>
 
             </div>
         </div>
