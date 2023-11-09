@@ -16,7 +16,7 @@ function Kanbas() {
         startDate: "2023-09-10", endDate: "2023-12-15",
     })
 
-    const url = "http://localhost:4000/api/courses"
+    const url = `${API_BASE}/courses`
     const findAllCourses = async () => {
         const response = await axios.get(url)
         setCourses(response.data)

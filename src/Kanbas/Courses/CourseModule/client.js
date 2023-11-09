@@ -3,7 +3,6 @@ import axios from "axios"
 const API_BASE = process.env.REACT_APP_API_BASE;
 const moduleUrl = `${API_BASE}/modules`;
 
-const url = "http://localhost:4000/api/courses"
 
 
 export const deleteModule = async (mid) => {
