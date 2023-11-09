@@ -2,8 +2,7 @@ import axios from "axios"
 
 const API_BASE = process.env.REACT_APP_API_BASE;
 const moduleUrl = `${API_BASE}/modules`;
-
-
+const url = `${API_BASE}/courses`
 
 export const deleteModule = async (mid) => {
     const response = await axios.delete(`${moduleUrl}/${mid}`)
