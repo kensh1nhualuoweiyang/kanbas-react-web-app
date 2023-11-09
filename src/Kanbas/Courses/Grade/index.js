@@ -1,7 +1,7 @@
 import "./grade.css"
 import "../../css/general.css"
 import { useParams } from "react-router-dom"
-import CourseInfo from "../../CourseInfo";
+import CourseInfo from "../../Database";
 import { AiOutlineImport } from "react-icons/ai"
 import { AiOutlineExport } from "react-icons/ai"
 import { BsFillGearFill } from "react-icons/bs"

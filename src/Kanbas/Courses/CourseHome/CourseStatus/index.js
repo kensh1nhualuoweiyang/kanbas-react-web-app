@@ -1,6 +1,6 @@
 import "../../../css/general.css"
 import "../../CourseModule/courseHome.css"
-import CourseInfo from "../../../CourseInfo"
+import CourseInfo from "../../../Database"
 import { FaBan } from "react-icons/fa"
 import { AiOutlineCheckCircle } from "react-icons/ai"
 import { AiOutlineImport } from "react-icons/ai"

@@ -16,18 +16,39 @@ import { AiFillDelete } from "react-icons/ai"
 
 import { GrAdd } from "react-icons/gr"
 import { useDispatch, useSelector } from "react-redux"
-import { addModule,setModule,updateModule,deleteModule } from "./moduleRr"
+import { addModule,setModule,updateModule,deleteModule ,setModules} from "./moduleRr"
+import { useEffect } from "react"
+import { findModule , createModule} from "./client.js"
+import * as client from "./client"
 
 function ModuleList() {
     const { courseId } = useParams();
 
+    useEffect(() => {
+        findModule(courseId).then((modules) => dispatch(setModules(modules)))
+    },[courseId])
 
     const {modules} = useSelector((state) => state.moduleRr)
     const {module} = useSelector((state) => state.moduleRr)
     const dispatch = useDispatch()
 
+    const handleAddModule = () => {
+        createModule(courseId,module).then((module) => {
+            dispatch(addModule(module))
+        })
+    }
+
+    const handleDeleteModule = (mid) => {
+        client.deleteModule(mid).then((status) =>{
+            dispatch(deleteModule(mid))
+        })
+    }
 
 
+    const handleUpdate =async () => {
+        const stat =await client.updateModule(module)
+        dispatch(updateModule(module))
+    }
 
     return (
         <div className="wd-course-module-content">
@@ -46,10 +67,10 @@ function ModuleList() {
                             <li className="dropdown-item">Option 2</li>
                         </ul>
                     </div>
-                    <button type="button" className="btn btn-sm btn-danger" onClick={() => dispatch(addModule({...module,courseId:courseId}))} >
+                    <button type="button" className="btn btn-sm btn-danger" onClick={handleAddModule} >
                         <GrAdd className="me-1" />
                         Module</button>
-                    <button type="button" className="btn btn-sm btn-danger" onClick={dispatch(()=>updateModule(module))}>
+                    <button type="button" className="btn btn-sm btn-danger" onClick={handleUpdate}>
                         <AiFillEdit /> Update
                     </button>
                     <button type="button" className="btn btn-sm btn-secondary">
@@ -86,7 +107,7 @@ function ModuleList() {
                             <button type="button" className="btn btn-sm btn-danger me-2" onClick={() => dispatch(setModule({ ...module, description: `${module.description ? module.description : ""}` }))}>
                                 <AiFillEdit /> Edit
                             </button>
-                            <button type="button" className="btn btn-sm btn-danger" onClick={() => dispatch(deleteModule(module._id))}>
+                            <button type="button" className="btn btn-sm btn-danger" onClick={() => handleDeleteModule(module._id)}>
                                 <AiFillDelete /> Delete
                             </button>
                         </div>

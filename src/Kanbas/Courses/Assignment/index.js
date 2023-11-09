@@ -2,7 +2,7 @@
 import { useParams, Link } from "react-router-dom"
 import "../../css/general.css"
 import "./assignments.css"
-import CourseInfo from "../../CourseInfo";
+import CourseInfo from "../../Database";
 import { BsPlusLg } from "react-icons/bs"
 import { FaEllipsisVertical } from "react-icons/fa6"
 import { BiSolidChevronDownCircle } from "react-icons/bi"

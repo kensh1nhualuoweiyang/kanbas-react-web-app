@@ -1,5 +1,4 @@
 import { useParams, Routes, Route, Navigate, useLocation} from "react-router-dom";
-import CourseInfo from "../CourseInfo";
 import CourseNav from "./CourseNav";
 import "../css/general.css"
 import "./course.css"
@@ -9,11 +8,23 @@ import CourseModule from "./CourseModule";
 import Assignment from "./Assignment";
 import AssignmentEditor from "./Assignment/AssignmentEditor";
 import Grade from "./Grade";
-
-function Courses({courses}) {
+import { useEffect, useState } from "react";
+import axios from "axios"
+function Courses() {
     const { courseId } = useParams();
     const { pathname } = useLocation();
-    const course = courses.find((item) => item._id === courseId);
+
+    const [course,setCourse] = useState({})
+    const url = "http://localhost:4000/api/courses"
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(`${url}/${courseId}`)
+        setCourse(response.data)
+    }
+    
+    useEffect(() => {
+        findCourseById(courseId)
+    },[courseId])
+
     const routes = [
         { path: "/", element:<Navigate to="Home"/>},
         { path: "Home", element: <CourseHome/>, name: "Home" },
