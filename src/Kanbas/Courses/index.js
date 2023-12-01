@@ -63,7 +63,8 @@ function Courses() {
             <div className="wd-general-content-body">
                 <CourseNav />
                 <Routes>
-                    {
+                    { 
+                    
                         routes.map((route, index) => (
                             <Route key={index} path={route.path} element={route.element} />
                         ))
