@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios"
-import { url } from "inspector";
 
 function WorkingWithObject() {
     const [assignment, setAssignment] = useState({
