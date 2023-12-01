@@ -7,7 +7,7 @@ function EncodingParamURL() {
     const [b, setB] = useState(23);
     const [welcome, setWelcome] = useState("")
     const [result,setResult] = useState(0)
-    const url = "https://kanbas-node-server-app-chen-f1c054a4dcda.herokuapp.com/"
+    const url = "https://kanbas-node-server-app-chen-f1c054a4dcda.herokuapp.com"
     const fetchSum = async () =>{
         const response = await axios.get(`${url}/a5/add/${a}/${b}`);
         setResult(response.data)
@@ -18,7 +18,7 @@ function EncodingParamURL() {
     }
 
     const fetchWelcome = async () => {
-        const response = await axios.get("${url}/a5/welcome")
+        const response = await axios.get(`${url}/a5/welcome`)
         setWelcome(response.data)
     }
     useEffect(() => {
