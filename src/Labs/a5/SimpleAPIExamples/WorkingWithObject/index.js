@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios"
+import { url } from "inspector";
 
 function WorkingWithObject() {
     const [assignment, setAssignment] = useState({
@@ -20,9 +21,9 @@ function WorkingWithObject() {
         const response = await axios.get(`${URL}/title/${assignment.title}`)
         setAssignment(response.data)
     }
-    useEffect(()=>{
+    useEffect(() => {
         fetchAssignment()
-    },[])
+    }, [])
 
     return (
         <div>
@@ -33,9 +34,6 @@ function WorkingWithObject() {
 
             <button onClick={updateTitle} className="w-100 btn btn-primary mb-2">Update Title To: {assignment.title}</button>
             <button onClick={fetchAssignment} className="w-100 btn btn-danger mb-2">Fetch Assignment</button>
-            
-
-
 
             <a href={`${URL}/score/${assignment.score}`} className="btn btn-primary me-2 float-end"> Update Score</a>
             <input onChange={(e) => setAssignment({ ...assignment, score: parseInt(e.target.value) })} value={assignment.score} className="form-control mb-2 w-75" type="number" />
@@ -49,19 +47,19 @@ function WorkingWithObject() {
                 </label>
 
             </div>
-          
+
             <h4>Retrieving Objects</h4>
-            <a href="https://kanbas-node-server-app-chen-f1c054a4dcda.herokuapp.com/a5/assignment"
+            <a href={URL}
                 className="btn btn-primary me-2">
                 Get Assignment
             </a>
             <h4>Retrieving Properties</h4>
             <a
-                href="https://kanbas-node-server-app-chen-f1c054a4dcda.herokuapp.com/a5/assignment/title"
+                href={`${URL}/title`}
                 className="btn btn-primary me-2">
                 Get Title
             </a>
-
+          
         </div>
     );
 
