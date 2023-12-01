@@ -7,18 +7,18 @@ function EncodingParamURL() {
     const [b, setB] = useState(23);
     const [welcome, setWelcome] = useState("")
     const [result,setResult] = useState(0)
-
+    const url = "https://kanbas-node-server-app-chen-f1c054a4dcda.herokuapp.com/"
     const fetchSum = async () =>{
-        const response = await axios.get(`http://localhost:4000/a5/add/${a}/${b}`);
+        const response = await axios.get(`${url}/a5/add/${a}/${b}`);
         setResult(response.data)
     }
     const fetchSubtract = async () =>{
-        const response = await axios.get(`http://localhost:4000/a5/subtract/${a}/${b}`);
+        const response = await axios.get(`${url}/a5/subtract/${a}/${b}`);
         setResult(response.data)
     }
 
     const fetchWelcome = async () => {
-        const response = await axios.get("http://localhost:4000/a5/welcome")
+        const response = await axios.get("${url}/a5/welcome")
         setWelcome(response.data)
     }
     useEffect(() => {
@@ -48,13 +48,13 @@ function EncodingParamURL() {
 
 
             <h3>Path Parameters</h3>
-            <a href={`http://localhost:4000/a5/add/${a}/${b}`} className="btn btn-primary"> Add {a} + {b}</a>
-            <a href={`http://localhost:4000/a5/subtract/${a}/${b}`} className="btn btn-danger"> Substract {a} - {b}</a>
+            <a href={`${url}/a5/add/${a}/${b}`} className="btn btn-primary"> Add {a} + {b}</a>
+            <a href={`${url}/subtract/${a}/${b}`} className="btn btn-danger"> Substract {a} - {b}</a>
             <h3>Query Parameters</h3>
-            <a href={`http://localhost:4000/a5/calculator?operation=add&a=${a}&b=${b}`} className="btn btn-primary">
+            <a href={`${url}/a5/calculator?operation=add&a=${a}&b=${b}`} className="btn btn-primary">
                 Add {a} + {b}
             </a>
-            <a href={`http://localhost:4000/a5/calculator?operation=subtract&a=${a}&b=${b}`} className="btn btn-danger">
+            <a href={`${url}/a5/calculator?operation=subtract&a=${a}&b=${b}`} className="btn btn-danger">
                 Substract {a} - {b}
             </a>
 

@@ -5,7 +5,7 @@ function Assignment5() {
         <div>
             <h1>Assignment5</h1>
             <div className="list-group">
-                <a href="http://localhost:4000/a5/welcome"
+                <a href="https://kanbas-node-server-app-chen-f1c054a4dcda.herokuapp.com/a5/welcome"
                     className="list-group-item">
                     Welcome
                 </a>
