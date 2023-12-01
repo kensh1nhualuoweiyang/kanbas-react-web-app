@@ -49,7 +49,7 @@ function EncodingParamURL() {
 
             <h3>Path Parameters</h3>
             <a href={`${url}/a5/add/${a}/${b}`} className="btn btn-primary"> Add {a} + {b}</a>
-            <a href={`${url}/subtract/${a}/${b}`} className="btn btn-danger"> Substract {a} - {b}</a>
+            <a href={`${url}/a5/subtract/${a}/${b}`} className="btn btn-danger"> Substract {a} - {b}</a>
             <h3>Query Parameters</h3>
             <a href={`${url}/a5/calculator?operation=add&a=${a}&b=${b}`} className="btn btn-primary">
                 Add {a} + {b}
